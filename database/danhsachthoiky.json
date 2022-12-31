@@ -1,0 +1,161 @@
+{
+  "description": "Danh sách các thời kỳ lịch sử Việt Nam",
+  "list": [
+    {
+      "name": "Hồng Bàng & Văn Lang",
+      "link": "https://nguoikesu.com/dong-lich-su/hong-bang-va-van-lang"
+    },
+    {
+      "name": "Âu Lạc & Nam Việt",
+      "link": "https://nguoikesu.com/dong-lich-su/au-lac-va-nam-viet"
+    },
+    {
+      "name": "Bắc thuộc lần I",
+      "link": "https://nguoikesu.com/dong-lich-su/bac-thuoc-lan-thu-nhat"
+    },
+    {
+      "name": "Nhà Triệu",
+      "link": "https://nguoikesu.com/dong-lich-su/bac-thuoc-lan-thu-nhat/nha-trieu"
+    },
+    {
+      "name": "Trưng Nữ Vương",
+      "link": "https://nguoikesu.com/dong-lich-su/trung-nu-vuong"
+    },
+    {
+      "name": "Bắc thuộc lần II",
+      "link": "https://nguoikesu.com/dong-lich-su/bac-thuoc-lan-thu-hai"
+    },
+    {
+      "name": "Nhà Lý & Nhà Triệu",
+      "link": "https://nguoikesu.com/dong-lich-su/nha-ly-va-nha-trieu"
+    },
+    {
+      "name": "Nhà Tiền Lý",
+      "link": "https://nguoikesu.com/dong-lich-su/nha-ly-va-nha-trieu/nha-tien-ly"
+    },
+    {
+      "name": "Nhà Triệu",
+      "link": "https://nguoikesu.com/dong-lich-su/nha-ly-va-nha-trieu/nha-trieu"
+    },
+    {
+      "name": "Nhà Hậu Lý",
+      "link": "https://nguoikesu.com/dong-lich-su/nha-ly-va-nha-trieu/nha-hau-ly"
+    },
+    {
+      "name": "Bắc thuộc lần III",
+      "link": "https://nguoikesu.com/dong-lich-su/bac-thuoc-lan-thu-ba"
+    },
+    {
+      "name": "Thời kỳ xây nền tự chủ",
+      "link": "https://nguoikesu.com/dong-lich-su/thoi-ky-xay-nen-tu-chu"
+    },
+    {
+      "name": "Họ Khúc",
+      "link": "https://nguoikesu.com/dong-lich-su/thoi-ky-xay-nen-tu-chu/ho-khuc"
+    },
+    {
+      "name": "Nhà Ngô",
+      "link": "https://nguoikesu.com/dong-lich-su/nha-ngo"
+    },
+    {
+      "name": "Nhà Đinh",
+      "link": "https://nguoikesu.com/dong-lich-su/nha-dinh"
+    },
+    {
+      "name": "Nhà Tiền Lê",
+      "link": "https://nguoikesu.com/dong-lich-su/nha-tien-le"
+    },
+    {
+      "name": "Nhà Lý",
+      "link": "https://nguoikesu.com/dong-lich-su/nha-ly"
+    },
+    {
+      "name": "Nhà Trần",
+      "link": "https://nguoikesu.com/dong-lich-su/nha-tran"
+    },
+    {
+      "name": "Nhà Hồ",
+      "link": "https://nguoikesu.com/dong-lich-su/nha-ho"
+    },
+    {
+      "name": "Nhà Hậu Trần",
+      "link": "https://nguoikesu.com/dong-lich-su/nha-hau-tran"
+    },
+    {
+      "name": "Bắc thuộc lần IV",
+      "link": "https://nguoikesu.com/dong-lich-su/bac-thuoc-lan-thu-tu"
+    },
+    {
+      "name": "Nhà Hậu Lê",
+      "link": "https://nguoikesu.com/dong-lich-su/nha-hau-le"
+    },
+    {
+      "name": "Nam Bắc Triều",
+      "link": "https://nguoikesu.com/dong-lich-su/nam-bac-trieu"
+    },
+    {
+      "name": "Nhà Lê Trung Hưng",
+      "link": "https://nguoikesu.com/dong-lich-su/nam-bac-trieu/nha-le-trung-hung"
+    },
+    {
+      "name": "Nhà Mạc",
+      "link": "https://nguoikesu.com/dong-lich-su/nam-bac-trieu/nha-mac"
+    },
+    {
+      "name": "Trịnh Nguyễn Phân Tranh",
+      "link": "https://nguoikesu.com/dong-lich-su/trinh-nguyen-phan-tranh"
+    },
+    {
+      "name": "Nhà Lê Trung Hưng",
+      "link": "https://nguoikesu.com/dong-lich-su/trinh-nguyen-phan-tranh/nha-le-trung-hung"
+    },
+    {
+      "name": "Chúa Trịnh",
+      "link": "https://nguoikesu.com/dong-lich-su/trinh-nguyen-phan-tranh/chua-trinh"
+    },
+    {
+      "name": "Chúa Nguyễn",
+      "link": "https://nguoikesu.com/dong-lich-su/trinh-nguyen-phan-tranh/chua-nguyen"
+    },
+    {
+      "name": "Nhà Tây Sơn",
+      "link": "https://nguoikesu.com/dong-lich-su/nha-tay-son"
+    },
+    {
+      "name": "Nhà Nguyễn",
+      "link": "https://nguoikesu.com/dong-lich-su/nha-nguyen"
+    },
+    {
+      "name": "Pháp Thuộc",
+      "link": "https://nguoikesu.com/dong-lich-su/phap-thuoc"
+    },
+    {
+      "name": "Nhà Nguyễn",
+      "link": "https://nguoikesu.com/dong-lich-su/phap-thuoc/nha-nguyen"
+    },
+    {
+      "name": "Những cuộc khởi nghĩa chống thực dân Pháp",
+      "link": "https://nguoikesu.com/dong-lich-su/phap-thuoc/khoi-nghia-chong-phap"
+    },
+    {
+      "name": "Đảng Cộng Sản Việt Nam",
+      "link": "https://nguoikesu.com/dong-lich-su/phap-thuoc/dang-cong-san-viet-nam"
+    },
+    {
+      "name": "Việt Nam Dân Chủ Cộng Hoà",
+      "link": "https://nguoikesu.com/dong-lich-su/viet-nam-dan-chu-cong-hoa"
+    },
+    {
+      "name": "Kháng chiến chống Pháp",
+      "link": "https://nguoikesu.com/dong-lich-su/viet-nam-dan-chu-cong-hoa/khang-chien-chong-phap"
+    },
+    {
+      "name": "Kháng chiến chống Mĩ",
+      "link": "https://nguoikesu.com/dong-lich-su/viet-nam-dan-chu-cong-hoa/khang-chien-chong-mi"
+    },
+    {
+      "name": "Cộng hoà xã hội chủ nghĩa Việt Nam",
+      "link": "https://nguoikesu.com/dong-lich-su/viet-nam-xhcn"
+    }
+  ]
+}
