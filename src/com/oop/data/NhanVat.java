@@ -14,7 +14,6 @@ import static com.oop.data.ThoiKy.nhanVatObject;
 
 public class NhanVat {
     private final String BASE_URL = "https://nguoikesu.com";
-    public static final String FILENAME = "database/nhanvat.json";
     private final Logger logger = LogManager.getLogger(this.getClass().getName());
     private Document doc;
     private String name;
@@ -36,7 +35,7 @@ public class NhanVat {
 //            JSONObject object = JsonHandler.readJson(FILENAME);
             JSONArray array = nhanVatObject.containsKey("list") ? (JSONArray) nhanVatObject.get("list") : new JSONArray();
             JSONObject obj = new JSONObject();
-            obj.put("name", doc.select(".page-header h1").text());
+            obj.put("name", doc.select(".page-header h2").text());
             obj.put("code", UrlDecode.getCodeFromUrl(url));
             obj.put("thoi-ky-name", thoiKyName);
             obj.put("thoi-ky-code", thoiKyCode);

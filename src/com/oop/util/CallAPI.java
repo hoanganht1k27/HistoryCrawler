@@ -10,7 +10,12 @@ import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLSession;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 
 public class CallAPI {
 
@@ -36,6 +41,21 @@ public class CallAPI {
             return new Document(url);
         }
     }
+
+//    public static Document callAPI(String url) {
+//        try {
+//            HttpRequest getRequest = HttpRequest.newBuilder()
+//                    .uri(new URI(url))
+//                    .GET()
+//                    .build();
+//            HttpClient httpClient = HttpClient.newHttpClient();
+//            HttpResponse<String> getResponse = httpClient.send(getRequest, HttpResponse.BodyHandlers.ofString());
+//            return Jsoup.parse(getRequest.toString());
+//        } catch (Exception ex) {
+//            logger.error("Loi khi goi duong link " + url, ex);
+//        }
+//        return null;
+//    }
 
     private static Document getResponse(HttpsURLConnection conn, String url) {
         if(conn != null) {
