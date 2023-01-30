@@ -14,9 +14,11 @@ public class JsonHandler {
     public static final Logger logger = LogManager.getLogger(JsonHandler.class.getName());
     public static void writeJson(JSONObject obj, String filename) {
         try(BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
+            logger.info("Ghi file " + filename);
             writer.write(obj.toJSONString());
+            logger.info("Ghi file " + filename + " thanh cong");
         } catch (Exception e) {
-            logger.error("Loi khi ghi json file", e);
+            logger.error("Loi khi ghi json file " + filename , e);
         }
     }
 
