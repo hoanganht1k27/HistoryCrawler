@@ -1,9 +1,13 @@
 package com.oop.model;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.oop.util.HienThi;
 
-public class SuKienModel extends Model{
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class SuKienModel extends Model implements Description, CustomUrl{
     private String description;
     private List<String> nhanVatLienQuan = new ArrayList<>();
     private List<String> diaDanhLienQuan = new ArrayList<>();
@@ -33,5 +37,18 @@ public class SuKienModel extends Model{
 
     public void setDiaDanhLienQuan(List<String> diaDanhLienQuan) {
         this.diaDanhLienQuan = diaDanhLienQuan;
+    }
+
+    @Override
+    public String getUrl() {
+        return HienThi.getSuKienUrl() + "/" + name;
+    }
+
+    @Override
+    public Map<String, String> getMapDescription() {
+        Map<String, String> des = new HashMap<>();
+        des.put("Tên", name);
+        des.put("Chi tiết", description);
+        return des;
     }
 }

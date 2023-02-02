@@ -15,14 +15,15 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class TranDanh {
+public class TranDanh implements Crawler{
 
     private final String BASE_URL = "https://vi.wikipedia.org";
     private final String ALL_URL = "https://vi.wikipedia.org/wiki/Danh_sách_trận_đánh_trong_lịch_sử_Việt_Nam";
     public static JSONObject tranDanhObject = new JSONObject();
     private final ExecutorService pool = Executors.newFixedThreadPool(8);
 
-    public TranDanh() {
+    @Override
+    public void crawl() {
         Document doc = CallAPI.callAPI(ALL_URL);
         Elements elements = doc.select(".mw-parser-output h2");
         for (Element e : elements) {
@@ -30,7 +31,7 @@ public class TranDanh {
             Elements listTranDanh = e.nextElementSibling().select("li a");
             for (Element ee : listTranDanh) {
                 String tranDanhUrl = ee.attr("href");
-                    pool.submit(new TranDanhData(thoiKyName, BASE_URL + tranDanhUrl));
+                pool.submit(new TranDanhData(thoiKyName, BASE_URL + tranDanhUrl));
             }
         }
 

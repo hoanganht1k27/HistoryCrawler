@@ -16,7 +16,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class ThoiKy {
+public class ThoiKy implements Crawler{
 
     private final Logger logger = LogManager.getLogger(this.getClass().getName());
     private static final String BASE_URL = "https://nguoikesu.com";
@@ -27,11 +27,12 @@ public class ThoiKy {
 
     private final ExecutorService pool = Executors.newFixedThreadPool(8);
 
-    public ThoiKy() {
+    @Override
+    public void crawl() {
         try {
             logger.info("Bat dau lay thong tin cac thoi ky lich su");
             doc = CallAPI.callAPI(BASE_URL);
-            Elements cacThoiKyLichSu = doc.select(".mod-articlescategories li");
+            Elements cacThoiKyLichSu = doc.select(".sidebar-inner .categories-module.mod-articlescategories li");
             numOfThoiKy = cacThoiKyLichSu.size();
             JSONObject obj = new JSONObject();
             obj.put("description", "Danh sách các thời kỳ lịch sử Việt Nam");

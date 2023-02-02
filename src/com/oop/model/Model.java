@@ -5,7 +5,6 @@ public abstract class Model {
     protected Model(String name) {
         this.name = name;
     }
-
     public String getName() {
         return name;
     }

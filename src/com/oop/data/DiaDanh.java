@@ -15,7 +15,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class DiaDanh {
+public class DiaDanh implements Crawler{
     private final Logger logger = LogManager.getLogger(this.getClass().getName());
     private static final String BASE_URL = "https://thuvienlichsu.com";
     private final int numOfPage = 10;
@@ -23,7 +23,8 @@ public class DiaDanh {
 
     private JSONArray diaDanhArray = new JSONArray();
 
-    public DiaDanh() {
+    @Override
+    public void crawl() {
         try {
             logger.info("Bat dau lay thong tin cac dia danh lich su");
             for(int i = 1; i <= numOfPage; i++) {

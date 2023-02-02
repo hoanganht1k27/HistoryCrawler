@@ -15,14 +15,15 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class SuKien {
+public class SuKien implements Crawler{
     private final Logger logger = LogManager.getLogger(this.getClass().getName());
     private static final String BASE_URL = "https://thuvienlichsu.com";
     private final int numOfPage = 19;
     private final ExecutorService pool = Executors.newFixedThreadPool(8);
     private JSONArray suKienArray = new JSONArray();
 
-    public SuKien() {
+    @Override
+    public void crawl() {
         try {
             logger.info("Bat dau lay thong tin su kien lich su");
             for(int i = 1; i <= numOfPage; i++) {
@@ -42,7 +43,6 @@ public class SuKien {
         } catch (Exception ex) {
             logger.error("Loi xay ra khi lay thong tin su kien lich su");
         }
-
     }
 
     private class SuKienData implements Runnable {

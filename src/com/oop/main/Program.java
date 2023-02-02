@@ -1,11 +1,15 @@
 package com.oop.main;
 
 import com.oop.repository.Repository;
-import com.oop.repository.impl.ThoiKyRepositoryImpl;
+import com.oop.repository.impl.*;
 
 public class Program {
     private Repository[] repositories = {
-            ThoiKyRepositoryImpl.getInstance()
+            ThoiKyRepositoryImpl.getInstance(),
+            NhanVatRepositoryImpl.getInstance(),
+            DiaDanhRepositoryImpl.getInstance(),
+            DanhNhanRepositoryImpl.getInstance(),
+            SuKienRepositoryImpl.getInstance()
     };
 
     public Program() {
