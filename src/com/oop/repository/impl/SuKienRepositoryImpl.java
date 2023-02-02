@@ -1,5 +1,6 @@
 package com.oop.repository.impl;
 
+import com.oop.model.Description;
 import com.oop.model.SuKienModel;
 import com.oop.repository.Repository;
 import com.oop.repository.SuKienRepository;
@@ -48,5 +49,20 @@ public class SuKienRepositoryImpl implements SuKienRepository, Repository {
                 logger.error("Loi khi load data su kien", ex);
             }
         }
+    }
+
+    @Override
+    public List<SuKienModel> getAllSuKien() {
+        return models;
+    }
+
+    @Override
+    public SuKienModel getSuKienByName(String name) {
+        for (SuKienModel model : models) {
+            if (name.equalsIgnoreCase(model.getName())) {
+                return model;
+            }
+        }
+        return null;
     }
 }

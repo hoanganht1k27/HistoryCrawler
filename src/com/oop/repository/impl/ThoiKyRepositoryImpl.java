@@ -53,7 +53,7 @@ public class ThoiKyRepositoryImpl implements ThoiKyRepository, Repository {
     }
 
     @Override
-    public Description getThoiKyByName(String name) {
+    public ThoiKyModel getThoiKyByName(String name) {
         for (ThoiKyModel thoiKyModel : models) {
             if (name.equalsIgnoreCase(thoiKyModel.getName())) {
                 return thoiKyModel;

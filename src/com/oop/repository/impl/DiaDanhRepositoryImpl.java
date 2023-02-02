@@ -26,6 +26,10 @@ public class DiaDanhRepositoryImpl implements DiaDanhRepository, Repository {
         return instance;
     }
 
+    private DiaDanhRepositoryImpl() {
+
+    }
+
     @Override
     public void loadData() {
         logger.info("Bat dau load data dia danh");
@@ -43,5 +47,33 @@ public class DiaDanhRepositoryImpl implements DiaDanhRepository, Repository {
                 logger.error("Loi khi load data dia danh", ex);
             }
         }
+    }
+
+    @Override
+    public List<DiaDanhModel> getAllDiaDanh() {
+        return models;
+    }
+
+    @Override
+    public DiaDanhModel getDiaDanhByName(String name) {
+        for (DiaDanhModel model : models) {
+            if(name.equalsIgnoreCase(model.getName())) {
+                return model;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public DiaDanhModel getDiaDanhByName(String name, boolean isContain) {
+        if (isContain) {
+            for (DiaDanhModel model : models) {
+                if (model.getName().contains(name)) {
+                    return model;
+                }
+            }
+            return null;
+        }
+        return getDiaDanhByName(name);
     }
 }

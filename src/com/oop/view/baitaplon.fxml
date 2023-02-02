@@ -36,8 +36,9 @@
                <children>
                   <AnchorPane HBox.hgrow="ALWAYS">
                      <children>
-                        <TextField fx:id="searchTf" layoutX="398.0" prefHeight="26.0" prefWidth="155.0" promptText="Tìm kiếm" AnchorPane.rightAnchor="46.799999999999955" />
-                        <Button fx:id="searchBtn" layoutX="539.0" mnemonicParsing="false" text="Tìm" AnchorPane.rightAnchor="10.0" />
+                        <TextField fx:id="searchTf" focusTraversable="false" layoutX="398.0" prefHeight="26.0" prefWidth="155.0" promptText="Tìm kiếm" AnchorPane.rightAnchor="46.799999999999955" />
+                        <Button fx:id="searchBtn" layoutX="539.0" mnemonicParsing="false" onAction="#searchBtnPressed" text="Tìm" AnchorPane.rightAnchor="10.0" />
+                        <Button fx:id="backBtn" layoutX="17.0" mnemonicParsing="false" onAction="#backBtnPressed" prefWidth="50.0" text="Trở về" />
                      </children>
                   </AnchorPane>
                </children>
