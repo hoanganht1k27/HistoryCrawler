@@ -4,7 +4,7 @@ Crawl Vietnam history data with jsoup, display on javafx application
 # Member:
 Nguyen Hoang Anh
 
-Nguyen Hoang Lon
+Nguyen Hoang Long
 
 Vu Tien Dung
 
