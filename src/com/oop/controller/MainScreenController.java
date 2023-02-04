@@ -54,7 +54,7 @@ public class MainScreenController {
     @FXML
     void backBtnPressed(ActionEvent event) {
         if (this.urls.size() > 0)
-        moveToUrl(this.urls.removeLast());
+        moveToUrl(this.urls.removeLast(), false);
     }
 
     private void addList(String title, String url, String searchVal) {
@@ -237,12 +237,23 @@ public class MainScreenController {
     }
 
     private void reset(String url) {
-        this.urls.addLast(this.url);
-        if (this.urls.size() > MAX_URL_SIZE) {
-            this.urls.pop();
+        reset(url, true);
+    }
+
+    private void reset(String url, boolean saveToReturn) {
+        if (saveToReturn) {
+            this.urls.addLast(this.url);
+            if (this.urls.size() > MAX_URL_SIZE) {
+                this.urls.pop();
+            }
         }
         this.url = url;
         resetMainScreen(url);
+    }
+
+    public void moveToUrl(String url, boolean saveToReturn) {
+        reset(url, saveToReturn);
+        generateFromUrl(url);
     }
 
     public void moveToUrl(String url, String searchVal) {
@@ -253,6 +264,10 @@ public class MainScreenController {
 
     public void moveToUrl(String url) {
         reset(url);
+        generateFromUrl(url);
+    }
+
+    private void generateFromUrl(String url) {
         generateFromUrl(url, null);
     }
 
