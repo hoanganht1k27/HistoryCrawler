@@ -48,6 +48,6 @@ Thumbs.db
 *.mov
 *.wmv
 
-#database
-libs
+database
+#libs
 
