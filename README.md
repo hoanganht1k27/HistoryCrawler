@@ -15,11 +15,17 @@ Vu Tien Dung
 ## Step 3: Run project
 ### Step 3.1: Crawl data
 Add to program parameters these if you want to crawl data
+
 DiaDanh for historical destinations
+
 DanhNhan for historical figures
+
 ThoiKy for historical periods
+
 TranDanh for historical wars
+
 SuKien for historical events
+
 For example you can add "DiaDanh DanhNhan ThoiKy TranDanh SuKien" to program parameters
 ### Step 3.2: Display data
 Just run the program without any program parameters is just enough.
