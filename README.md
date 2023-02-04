@@ -1,5 +1,10 @@
 # HistoryCrawler
 Crawl Vietnam history data with jsoup, display on javafx application
+# Team 11
+# Member:
+Nguyen Hoang Anh
+Nguyen Hoang Lon
+Vu Tien Dung
 
 # How to run
 ## Step 1: Clone project
