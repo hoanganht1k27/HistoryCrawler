@@ -13,4 +13,6 @@ public interface SuKienService {
     Map<String, String> getSuKienByName(String name);
     List<DanhNhanModel> getDanhNhanBySuKienName(String name);
     List<DiaDanhModel> getDiaDanhBySuKienName(String name);
+    List<SuKienModel> getSuKienByDanhNhanName(String name);
+    List<SuKienModel> getSuKienByDiaDanhName(String name);
 }

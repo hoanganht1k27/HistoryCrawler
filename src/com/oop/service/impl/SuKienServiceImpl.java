@@ -75,4 +75,46 @@ public class SuKienServiceImpl implements SuKienService {
         }
         return res;
     }
+
+    private String getRealName(String name) {
+        if (name.contains("(")) {
+            int i = name.indexOf("(");
+            return name.substring(0, i);
+        }
+        return name;
+    }
+
+    @Override
+    public List<SuKienModel> getSuKienByDanhNhanName(String name) {
+        String danhNhanName = getRealName(name);
+        List<SuKienModel> models = getAllSuKien();
+        List<SuKienModel> res = new ArrayList<>();
+        for (SuKienModel suKienModel : models) {
+            boolean kt = false;
+            for (String s : suKienModel.getNhanVatLienQuan()) {
+                if (s.contains(danhNhanName)) kt = true;
+            }
+            if (kt) {
+                res.add(suKienModel);
+            }
+        }
+        return res;
+    }
+
+    @Override
+    public List<SuKienModel> getSuKienByDiaDanhName(String name) {
+        String diaDanhName = getRealName(name);
+        List<SuKienModel> models = getAllSuKien();
+        List<SuKienModel> res = new ArrayList<>();
+        for (SuKienModel suKienModel : models) {
+            boolean kt = false;
+            for (String s : suKienModel.getDiaDanhLienQuan()) {
+                if (s.contains(diaDanhName)) kt = true;
+            }
+            if (kt) {
+                res.add(suKienModel);
+            }
+        }
+        return res;
+    }
 }

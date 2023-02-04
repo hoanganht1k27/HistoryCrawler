@@ -169,6 +169,14 @@ public class MainScreenController {
         for (Map.Entry<String, String> m : des.entrySet()) {
             addChiTiet(m.getKey(), m.getValue());
         }
+
+        List<SuKienModel> suKienModels = suKienService.getSuKienByDiaDanhName(name);
+        if (suKienModels.size() > 0) {
+            addDanhSach(HienThi.SU_KIEN_LIEN_QUAN);
+            for (SuKienModel model : suKienModels) {
+                addList(model.getName(), model.getUrl());
+            }
+        }
     }
 
     private void showDetailDanhNhan(String name) {
@@ -176,6 +184,14 @@ public class MainScreenController {
         Map<String, String> des = danhNhanService.getDanhNhanByName(name);
         for (Map.Entry<String, String> m : des.entrySet()) {
             addChiTiet(m.getKey(), m.getValue());
+        }
+
+        List<SuKienModel> suKienModels = suKienService.getSuKienByDanhNhanName(name);
+        if (suKienModels.size() > 0) {
+            addDanhSach(HienThi.SU_KIEN_LIEN_QUAN);
+            for (SuKienModel model : suKienModels) {
+                addList(model.getName(), model.getUrl());
+            }
         }
     }
 

@@ -17,6 +17,7 @@ public class HienThi {
     public static final String THOI_KY_LIEN_QUAN = "Các thời kỳ liên quan";
     public static final String DANH_NHAN_LIEN_QUAN = "Các danh nhân lịch sử liên quan";
     public static final String DIA_DANH_LIEN_QUAN = "Các địa danh lịch sử liên quan";
+    public static final String SU_KIEN_LIEN_QUAN = "Các sự kiện lịch sử liên quan";
     public static String getThoiKyUrl() {
         return HOME_URL + THOI_KY_URL;
     }
